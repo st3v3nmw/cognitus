@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cognitus"
+version = "0.1.0"
+description = ""
+authors = ["Stephen Mwangi <mail@stephenmwangi.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+anki = "^24.6.2"
+textual = "^0.70.0"
+thefuzz = "^0.22.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
