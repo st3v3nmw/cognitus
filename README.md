@@ -8,7 +8,7 @@ Cognitus is a script to generate flashcards on a topic and sync them to Anki.
 - Create the virtual environment with [Poetry](https://python-poetry.org/docs/basic-usage/): `poetry shell`
 - Install the project's dependencies: `poetry install`
 - Create a `.env` file with entries for `OPENROUTER_API_KEY` & `ANKI_COLLECTION_PATH`
-    - The Anki collection path depends on your insallation method. For instance, mine was at `/home/stephen/.var/app/net.ankiweb.Anki/data/Anki2/Stephen/collection.anki2` after installing with the [tarball](https://docs.ankiweb.net/platform/linux/installing.html)
+    - The Anki collection path depends on your installation method. For instance, mine was at `/home/stephen/.var/app/net.ankiweb.Anki/data/Anki2/Stephen/collection.anki2` after installing with the [tarball](https://docs.ankiweb.net/platform/linux/installing.html)
 - You can change the prompt if you wish by editing `PROMPT` in `cognitus.py`. This is the default:
 
 ```
@@ -36,6 +36,8 @@ For math equations, use the format: <anki-mathjax>equation</anki-mathjax>.
 Wrap code in italics <i>code</i>
 Your response MUST only contain flashcards.
 ```
+
+`%s` is a placeholder for the topic and it must always be present in the prompt.
 
 ## Usage
 
